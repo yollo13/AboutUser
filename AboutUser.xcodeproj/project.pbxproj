@@ -13,6 +13,10 @@
 		5E1000D624FBD9160069295C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1000D424FBD9160069295C /* Main.storyboard */; };
 		5E1000D824FBD9170069295C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1000D724FBD9170069295C /* Assets.xcassets */; };
 		5E1000DB24FBD9170069295C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1000D924FBD9170069295C /* LaunchScreen.storyboard */; };
+		5E1000E824FBF1500069295C /* UserLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1000E724FBF1500069295C /* UserLoginInfo.swift */; };
+		5E1000EC24FBF69C0069295C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1000EB24FBF69C0069295C /* WelcomeViewController.swift */; };
+		5E1000EE24FBF82B0069295C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1000ED24FBF82B0069295C /* UserInfoViewController.swift */; };
+		5E1000F024FC66260069295C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1000EF24FC66260069295C /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5E1000D724FBD9170069295C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E1000DA24FBD9170069295C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E1000DC24FBD9170069295C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1000E724FBF1500069295C /* UserLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginInfo.swift; sourceTree = "<group>"; };
+		5E1000EB24FBF69C0069295C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5E1000ED24FBF82B0069295C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		5E1000EF24FC66260069295C /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		5E1000CD24FBD9160069295C /* AboutUser */ = {
 			isa = PBXGroup;
 			children = (
-				5E1000CE24FBD9160069295C /* AppDelegate.swift */,
-				5E1000D024FBD9160069295C /* SceneDelegate.swift */,
-				5E1000D224FBD9160069295C /* ViewController.swift */,
-				5E1000D424FBD9160069295C /* Main.storyboard */,
-				5E1000D724FBD9170069295C /* Assets.xcassets */,
-				5E1000D924FBD9170069295C /* LaunchScreen.storyboard */,
-				5E1000DC24FBD9170069295C /* Info.plist */,
+				5E1000E624FBDB970069295C /* Model */,
+				5E1000E324FBDA610069295C /* Conrollers */,
+				5E1000E224FBDA4E0069295C /* Storyboards */,
+				5E1000E424FBDB430069295C /* SupportFiles */,
+				5E1000E524FBDB660069295C /* Sources */,
 			);
 			path = AboutUser;
+			sourceTree = "<group>";
+		};
+		5E1000E224FBDA4E0069295C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E1000D424FBD9160069295C /* Main.storyboard */,
+				5E1000D924FBD9170069295C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E1000E324FBDA610069295C /* Conrollers */ = {
+			isa = PBXGroup;
+			children = (
+				5E1000D224FBD9160069295C /* ViewController.swift */,
+				5E1000EF24FC66260069295C /* PhotoViewController.swift */,
+				5E1000EB24FBF69C0069295C /* WelcomeViewController.swift */,
+				5E1000ED24FBF82B0069295C /* UserInfoViewController.swift */,
+			);
+			path = Conrollers;
+			sourceTree = "<group>";
+		};
+		5E1000E424FBDB430069295C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5E1000CE24FBD9160069295C /* AppDelegate.swift */,
+				5E1000D024FBD9160069295C /* SceneDelegate.swift */,
+				5E1000DC24FBD9170069295C /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		5E1000E524FBDB660069295C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5E1000D724FBD9170069295C /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5E1000E624FBDB970069295C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E1000E724FBF1500069295C /* UserLoginInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1000D324FBD9160069295C /* ViewController.swift in Sources */,
+				5E1000EE24FBF82B0069295C /* UserInfoViewController.swift in Sources */,
+				5E1000EC24FBF69C0069295C /* WelcomeViewController.swift in Sources */,
 				5E1000CF24FBD9160069295C /* AppDelegate.swift in Sources */,
+				5E1000F024FC66260069295C /* PhotoViewController.swift in Sources */,
+				5E1000E824FBF1500069295C /* UserLoginInfo.swift in Sources */,
 				5E1000D124FBD9160069295C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ASSNB2G6;
-				INFOPLIST_FILE = AboutUser/Info.plist;
+				INFOPLIST_FILE = AboutUser/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ASSNB2G6;
-				INFOPLIST_FILE = AboutUser/Info.plist;
+				INFOPLIST_FILE = AboutUser/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
